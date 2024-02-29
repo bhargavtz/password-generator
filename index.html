@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Secure Password Generator</h1>
+    <div class="settings">
+      <h3>Password Length:</h3>
+      <input type="number" id="lengthInput" min="8" value="16" max="32">
+      <div class="checkbox-container">
+        <input type="checkbox" id="lowercaseCheckbox" checked>
+        <label for="lowercaseCheckbox">Lowercase Letters</label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="uppercaseCheckbox" checked>
+        <label for="uppercaseCheckbox">Uppercase Letters</label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="numbersCheckbox" checked>
+        <label for="numbersCheckbox">Numbers</label>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="symbolsCheckbox">
+        <label for="symbolsCheckbox">Symbols</label>
+      </div>
+    </div>
+    <div class="generated-password">
+      <p>Generated Password:</p>
+      <input type="text" id="passwordOutput" readonly>
+      <button id="copyButton" title="Copy to clipboard">Copy</button>
+    </div>
+    <button id="generateButton">Generate Password</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
