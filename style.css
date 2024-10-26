@@ -1,101 +1,9 @@
 body {
   font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 20px;
-  background-color: #f0f0f0;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  position: relative;
   animation: fadeInUp 0.5s ease;
-}
-
-.settings,
-.generated-password {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-h1 {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-input[type="number"],
-input[type="text"],
-input[type="checkbox"] {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-.checkbox-container {
-  display: flex;
-  align-items: center;
-}
-
-.checkbox-container input {
-  margin-right: 10px;
-}
-
-#generateButton,
-#copyButton {
-  cursor: pointer;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  padding: 10px 20px;
-  transition: background-color 0.3s;
-}
-
-#generateButton:hover,
-#copyButton:hover {
-  background-color: #45A049;
-}
-
-#copyButton {
-  margin-left: 10px;
-  background-color: #2196F3;
-}
-
-#copyButton:hover {
-  background-color: #0b7dda;
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 600px) {
-  .container {
-    margin: 0 10px;
-  }
-
-  h1 {
-    font-size: 1.5em;
-  }
-
-  #generateButton,
-  #copyButton {
-    width: 100%;
-  }
 }
 
 @keyframes fadeInUp {
@@ -108,4 +16,8 @@ input[type="checkbox"] {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+h1 {
+  color: #333;
 }
